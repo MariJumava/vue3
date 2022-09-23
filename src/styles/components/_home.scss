@@ -1,0 +1,33 @@
+@import '../variables';
+@import '../mixins';
+
+.home {
+    position: relative;
+    text-align: center;
+}
+
+.home-description {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+.home-description__title {
+    @extend %title;
+}
+
+.home-description__subtitle {
+    @extend %subtitle;
+}
+
+.footer {
+    width: 1440px;
+    height: 125px;
+    background-color: $primary-color;
+}
+
+.footer-title {
+    padding-top: 50px;
+    color: $color-white;
+    @extend %primary-description;
+}

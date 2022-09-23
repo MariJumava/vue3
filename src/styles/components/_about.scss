@@ -1,0 +1,38 @@
+@import '../variables';
+@import '../mixins';
+
+.about {
+    position: relative;
+}
+
+.about-wrap {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.about-description {
+    width: 590px;
+    margin-right: 40px;
+    text-align: start;
+
+    &__title {
+        @extend %primary-title;
+    }
+
+    &__text {
+        margin: 16px 0;
+        @extend %primary-description;
+    }
+}
+
+.read-more-btn {
+    margin-right: 23px;
+    @extend %primary-btn;
+}
+
+.contact-btn {
+    @extend %secondary-btn;
+}

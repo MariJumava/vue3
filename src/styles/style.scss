@@ -1,0 +1,22 @@
+@import url('https://fonts.google.com/?query=Gothic+A1');
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import './components/nav';
+@import './components/home';
+@import './components/about';
+@import './components/frameworks';
+@import './components/applications';
+@import './components/contact';
+
+body {
+    margin: 0;
+}
+  
+#app {
+  font-family: 'Gothic A1', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+  

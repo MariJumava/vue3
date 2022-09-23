@@ -1,0 +1,22 @@
+@import '../variables';
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px 20px 100px;
+}
+  
+.nav a {
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $primary-color;
+    text-decoration: none;
+}
+  
+.nav a.router-link-exact-active {
+    color: $color-active;
+}

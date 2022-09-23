@@ -1,0 +1,30 @@
+@import '../variables';
+@import '../mixins';
+
+.contact {
+    width: 1434px;
+    height: 403px;
+}
+
+.contact-title {
+    padding: 44px 0;
+    @extend %primary-title;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: center;
+
+    &__item {
+        width: 280px;
+        height: 70px;
+        margin-right: 15px;
+    }
+}
+
+.contact-button {
+    @extend %primary-btn;
+}

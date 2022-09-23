@@ -1,0 +1,56 @@
+@import './variables';
+
+%title {
+    font-family: 'Gothic A1';
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 88px;
+    text-align: center;
+    color: $color-white;
+}
+
+%subtitle {
+    font-family: 'Gothic A1';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: $color-white;
+}
+
+%primary-main-title {
+    font-family: 'Gothic A1';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: $primary-color;
+}
+%primary-title {
+    font-family: 'Gothic A1';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: $primary-color;
+}
+%primary-description {
+    font-family: 'Gothic A1';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $main-color;
+}
+%primary-btn {
+    width: 200px;
+    height: 40px;
+    background-color: $color-active;
+    color: $color-white;
+    border-radius: 10px;
+    border: none;
+}
+%secondary-btn {
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid $color-active;
+    border-radius: 10px;
+}
