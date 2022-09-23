@@ -28,3 +28,8 @@
 .contact-button {
     @extend %primary-btn;
 }
+
+.input-errors {
+    font-size: 10px;
+    color: red;
+}

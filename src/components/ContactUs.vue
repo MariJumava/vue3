@@ -70,11 +70,19 @@
         <input type="password" placeholder="Enter Your Zip Code" />
       </div>
     </form>
-    <button class="contact-button" :disabled="v$.form.$invalid">Submit</button>
+    <button
+      class="contact-button"
+      :disabled="v$.form.$invalid"
+      @click="showModal"
+    >
+      Submit
+    </button>
+    <Modal ref="modal" />
   </div>
 </template>
 
 <script>
+import Modal from "./Modal";
 import useVuelidate from "@vuelidate/core";
 import { required, email } from "@vuelidate/validators";
 
@@ -87,6 +95,7 @@ export function validName(name) {
 }
 
 export default {
+  components: { Modal },
   setup() {
     return { v$: useVuelidate() };
   },
@@ -99,6 +108,12 @@ export default {
         email: "",
       },
     };
+  },
+
+  methods: {
+    showModal() {
+      this.$refs.modal.open();
+    },
   },
 
   validations() {
